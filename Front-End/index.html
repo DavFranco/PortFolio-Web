@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Web</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+          <!------------ Menu ------------>
+          <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-custom">
+            <img id="logo-nav" src="img/logo-arg-progr.png" alt="">
+        
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-menu" >
+                  <a class="nav-link" href="#Sobremi">Sobre mi</a>
+                </li>
+                <li class="nav-menu">
+                  <a class="nav-link" href="#experience">Experiencia</a>
+                </li>
+                <li class="nav-menu">
+                  <a class="nav-link" href="#education">Formación</a>
+                </li>
+                <li class="nav-menu">
+                  <a class="nav-link" href="#aptitude">Aptitudes</a>
+                </li>
+                
+              </ul>
+              <form class="btn-ingresar">
+                <button type="button" class="btn btn-outline-light" onclick=ShowLogin()>Ingresar</button>
+               </form>
+            </div>
+          </nav>
+  
+            <!------------ Cabecera ------------>
+  <div class="card mat-card" id="first-card">
+    <div id="profile-background"><img id="info-back-img"
+    src="img/banner.jpg">
+   <!--- <a href='https://www.freepik.es/vectores/linea'> de Línea creado por Creative_hat - www.freepik.es</a>-->
+    </div>
+  <div id="info" style="padding: 16px">
+  <div id="info-img">
+  <img id="info-user-img" class="profile-image"
+    src="img\perfil-img.png">
+    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"
+        onclick="showEditProfileModal()"></i></a>
+    </div>
+  </div>
+  </div>
+  <div id="info-data">
+        <div>
+          <h1 id="info-name">Davina Melisa Franco</h1>
+          <div><span id="info-position">Analista de Sistemas de Computación</span></div>
+          <div><span id="info-ubication">Ingeniero Chanourdié - Santa Fe</span></div>
+          
+          
+          <ul class="redes">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="grey-text fab fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <i class="grey-text fab fa-facebook-square fa-2x"></i>
+                </a>
+            </li>
+                
+          </ul>
+        </div>
+    </div>
+  </div>
+                        <!------------ Cuerpo ------------>
+                        <!------------- Sobre mi---------->
+                        
+    <div class="card mat-card">
+      <div id="Sobremi">
+          <div class="card-titles">
+            <h2>Sobre mi</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditAboutModal()"></i></a>
+            </div>
+          </div>
+          <div id="about">
+            Hola, soy Davina Melisa Franco. Me apasiona la informatica, las redes sociales y la comunicación. 
+            Tengo excelente habilidades para el desarrollo de contenidos digitales y adaptarme a cualquier hambiente
+            laboral en la materia.
+          </div>
+        </div>
+    </div>
+                        <!----------- Experiencia---------->
+    <div class="card mat-card">
+      <div id="experience">
+        <div class="card-titles">
+          <h2>Experiencia</h2>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewExpModal()"></i></a>
+          </div>
+        </div>
+        <div>
+          <ul class="items-list" id="expList">
+      <li>
+        <div class="data-container">
+          <a href="#">
+            <div class="logo-image-container"><img id="exp-img" class="logo-image" src="img/logo-csdnet.jpg"></div>
+            <div class="list-info">
+              <div>
+                <h3 id="exp-company">CSDNET Servicios Digitales S.R.L.</h3>
+                <p><span id="exp-position">Soporte técnico</span> | <span id="exp-initial">2020</span> – <span id="exp-end">actualidad</span> - <span id="exp-time">2 años</span>
+                <h4 id="exp-place">Ingeniero Chanourdié - Santa Fe</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="data-control">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditExpModal()"></i></a></div>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteExp()"></i></a></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="data-container">
+          <a href="#">
+            <div class="logo-image-container"><img id="exp-img" class="logo-image" src="img/logo-comuna.png"></div>
+            <div class="list-info">
+              <div>
+                <h3 id="exp-company">Comuna Ingeniero Chanourdié</h3>
+                <p><span id="exp-position">Comunicación y Redes Sociales</span> | <span id="exp-initial">2020</span> – <span id="exp-end">actualidad</span> - <span id="exp-time">2 años</span></h4>
+                <h4 id="exp-place">Ingeniero Chanourdié - Santa Fe</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="data-control">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditExpModal('')"></i></a></div>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteExp('')"></i></a></div>
+        </div>
+      </li>
+      </ul>
+  
+        </div>
+      </div>
+     </div>
+                        <!----------- Educacion---------->
+      <div class="card mat-card"> 
+        <div id="education">
+          <div class="card-titles">
+            <h2>Educación</h2>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewEduModal()"></i></a>
+            </div>
+          </div>
+          <div>
+            <ul class="items-list" id="eduList">
+      <li>
+        <div class="data-container">
+          <a href="#">
+            <div class="logo-image-container"><img id="edu-img" class="logo-image" src="img/logo-arg-prog.jpg"></div>
+            <div class="list-info">
+              <div>
+                <h3 id="edu-school">Argentina Programa</h3>
+                <p><span id="edu-title">SeProgramar (aprobado), YoProgramo (cursando)</span></p>
+                <p><time id="edu-start">2021</time> - <time id="edu-end">2022</time></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="data-control">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditEduModal()"></i></a></div>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteEdu()"></i></a></div>
+        </div>
+      </li>
+        
+      <li>
+        <div class="data-container">
+          <a href="#">
+            <div class="logo-image-container"><img id="edu-img" class="logo-image" src="img/logo-inap.jpg"></div>
+            <div class="list-info">
+              <div>
+                <h3 id="edu-school">Instituto Nacional de Administración Pública</h3>
+                <p><span id="edu-title">Comunicación Gubernamental y Redes Sociales</span></p>
+                <p><time id="edu-start">2021</time> 
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="data-control">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditEduModal()"></i></a></div>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteEdu()"></i></a></div>
+        </div>
+      </li>
+        
+      <li>
+        <div class="data-container">
+          <a href="#">
+            <div class="logo-image-container"><img id="edu-img" class="logo-image" src="img/logo-comercio.jpg"></div>
+            <div class="list-info">
+              <div>
+                <h3 id="edu-school">Escuela Superior de Comercio N° 43</h3>
+                <p><span id="edu-title">Analista Programador</span>, <span id="edu-title">Analista de Sistemas de Computación</span></p>
+                <p><time id="edu-start">2011</time> - <time id="edu-end">2018</time></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="data-control">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditEduModal('I.E.S. Nº 9-012 “SAN RAFAEL EN INFORMÁTICA”')"></i></a></div>
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteEdu('I.E.S. Nº 9-012 “SAN RAFAEL EN INFORMÁTICA”')"></i></a></div>
+        </div>
+      </li>
+        </ul>
+          </div>
+        </div>
+      </div>
+                        <!----------- Aptitudes---------->
+    <div class="card mat-card">
+      <div id="aptitude">
+      <div class="card-titles">
+        <h2>Aptitudes</h2>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewAptModal()"></i></a>
+        </div>
+        
+      </div>
+
+      <ul class="items-list" id="aptList">
+        
+        <li>
+          <div class="aptitude-info">
+            <a href="#">
+              <p><span id="apt-aptitude">Herramientas de imágen y diseño</span></p>
+              <progress id="apt-progress" value="75" max="100" indeterminate></progress>
+            </a>          
+          </div>
+          <div class="data-control">
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditAptModal()"></i></a></div>
+            <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash" onclick="deleteApt()"></i></a></div>
+          </div>
+         </li>
+
+          <li>
+            <div class="aptitude-info">
+              <a href="#">
+                <p><span id="apt-aptitude">Gestión de redes sociales</span></p>
+                <progress id="apt-progress" value="80" max="100" indeterminate></progress>
+              </a>
+            </div>
+            
+          </li>
+
+        <li>
+          <div class="aptitude-info">
+            <a href="#">
+              <p><span id="apt-aptitude">Redacción de contenidos</span></p>
+              <progress id="apt-progress" value="80" max="100" indeterminate></progress>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="aptitude-info">
+            <a href="#">
+              <p><span id="atp-aptitude">Sistemas</span></p>
+              <progress id="apt-progress" value="90" max="100" indeterminate></progress>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="aptitude-info">
+            <a href="#">
+              <p><span id="atp-aptitude">Solución de problemas</span></p>
+              <progress id="apt-progress" value="85" max="100" indeterminate></progress>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+     <!-- Formulario Editar Perfil -->
+ <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar perfil</h5>
+        <button type="button" class="close" onclick="$('#editProfile').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputName">Nombre</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="inputPosition">Posición</label>
+          <input type="text" class="form-control" id="inputPosition" placeholder="Enter position">
+        </div>
+        <!--<div class="form-group">
+          <label for="inputOcupacion">Posición 2</label>
+          <input type="text" class="form-control" id="inputOcupacion" placeholder="Enter ocupacion">
+        </div>-->
+        <!--
+        <div class="form-group">
+          <label for="inputCompany">Compañía</label>
+          <input type="text" class="form-control" id="inputCompany" placeholder="Enter company">
+        </div>-->
+        <div class="form-group">
+          <label for="inputUbication">Ubicación</label>
+          <input type="text" class="form-control" id="inputUbication" placeholder="Enter ubication">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#editProfile').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveEditProfileModal()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Formulario Editar About -->
+ <div class="modal fade" id="editAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar acerca de...</h5>
+        <button type="button" class="close" onclick="$('#editAbout').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputAbout">Acerca de...</label>
+          <textarea type="text" class="form-control" id="inputAbout" placeholder="Enter about"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#editAbout').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveEditAboutModal()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Formulario Nueva Experiencia -->
+ <div class="modal fade" id="newExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Añadir experiencia</h5>
+        <button type="button" class="close" onclick="$('#newExp').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputPositionExp">Posición</label>
+          <input type="text" class="form-control" id="inputPositionExp" placeholder="Enter position">
+        </div>
+        <div class="form-group">
+          <label for="inputCompanyExp">Compañía</label>
+          <input type="text" class="form-control" id="inputCompanyExp" placeholder="Enter company">
+        </div>
+        <div class="form-group">
+          <label for="inputImgExp">Imagen</label>
+          <input type="text" class="form-control" id="inputImgExp" placeholder="Enter image">
+        </div>
+        <div class="form-group">
+          <label for="inputInitialExp">Fecha Inicio</label>
+          <input type="text" class="form-control" id="inputInitialExp" placeholder="Enter initial date">
+        </div>
+        <div class="form-group">
+          <label for="inputEndExp">Fecha Fin</label>
+          <input type="text" class="form-control" id="inputEndExp" placeholder="Enter end date">
+        </div>
+        <div class="form-group">
+          <label for="inputTimeExp">Tiempo en el trabajo</label>
+          <input type="text" class="form-control" id="inputTimeExp" placeholder="Enter time in position">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#newExp').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveNewExpModal()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Formulario Editar Experiencia -->
+  <div class="modal fade" id="editExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar experiencia</h5>
+        <button type="button" class="close" onclick="$('#editExp').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputCompanyExpEdit">Compañía</label>
+          <input type="text" class="form-control" id="inputCompanyExpEdit" placeholder="Enter company" readonly>
+        </div>
+        <div class="form-group">
+          <label for="inputPositionExpEdit">Posición</label>
+          <input type="text" class="form-control" id="inputPositionExpEdit" placeholder="Enter position">
+        </div>
+        <div class="form-group">
+          <label for="inputImgExpEdit">Imagen</label>
+          <input type="text" class="form-control" id="inputImgExpEdit" placeholder="Enter image">
+        </div>
+        <div class="form-group">
+          <label for="inputInitialExpEdit">Fecha Inicio</label>
+          <input type="text" class="form-control" id="inputInitialExpEdit" placeholder="Enter initial date">
+        </div>
+        <div class="form-group">
+          <label for="inputEndExpEdit">Fecha Fin</label>
+          <input type="text" class="form-control" id="inputEndExpEdit" placeholder="Enter end date">
+        </div>
+        <div class="form-group">
+          <label for="inputTimeExpEdit">Tiempo en el trabajo</label>
+          <input type="text" class="form-control" id="inputTimeExpEdit" placeholder="Enter time in position">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#editExp').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom"
+          onclick="saveEditExpModal($('#inputCompanyExpEdit').val())">Guardar
+          cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Formulario Agregar Educacion -->
+  <div class="modal fade" id="newEdu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Añadir educación</h5>
+        <button type="button" class="close" onclick="$('#newEdu').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputSchool">Institución Educativa</label>
+          <input type="text" class="form-control" id="inputSchool" placeholder="Enter school">
+        </div>
+        <div class="form-group">
+          <label for="inputTitle">Título</label>
+          <input type="text" class="form-control" id="inputTitle" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolImage">Imagen</label>
+          <input type="text" class="form-control" id="inputSchoolImage" placeholder="Enter image">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolInitial">Fecha Inicio</label>
+          <input type="text" class="form-control" id="inputSchoolInitial" placeholder="Enter initial date">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolEnd">Fecha Final</label>
+          <input type="text" class="form-control" id="inputSchoolEnd" placeholder="Enter end date">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#newEdu').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveNewEduModal()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Formulario Editar Educacion -->
+<div class="modal fade" id="editEdu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar educación</h5>
+        <button type="button" class="close" onclick="$('#editEdu').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputSchoolEdit">Institución educativa</label>
+          <input type="text" class="form-control" id="inputSchoolEdit" placeholder="Enter school" readonly>
+        </div>
+        <div class="form-group">
+          <label for="inputTitleEdit">Título</label>
+          <input type="text" class="form-control" id="inputTitleEdit" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolImageEdit">Imagen</label>
+          <input type="text" class="form-control" id="inputSchoolImageEdit" placeholder="Enter image">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolInitialEdit">Fecha Inicio</label>
+          <input type="text" class="form-control" id="inputSchoolInitialEdit" placeholder="Enter initial date">
+        </div>
+        <div class="form-group">
+          <label for="inputSchoolEndEdit">Fecha Final</label>
+          <input type="text" class="form-control" id="inputSchoolEndEdit" placeholder="Enter end date">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#editEdu').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveEditEduModal($('#inputSchoolEdit').val())">Guardar
+          cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Formulario Nuevas Aptitudes -->
+  <div class="modal fade" id="newApt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Añadir aptitud</h5>
+        <button type="button" class="close" onclick="$('#newApt').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputApt">Aptitud</label>
+          <input type="text" class="form-control" id="inputApt" placeholder="Enter Aptitude">
+        </div>
+
+        <div class="form-group">
+          <label for="inputApt">Porcentaje</label>
+          <input type="text" class="form-control" id="inputProg" placeholder="Enter Aptitude">
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#newApt').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveNewAptModal()">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Formulario Editar Aptitudes-->
+  <div class="modal fade" id="editApt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Aptitud</h5>
+        <button type="button" class="close" onclick="$('#editApt').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputAptEdit">Aptitud</label>
+          <input type="text" class="form-control" id="inputAptEdit" placeholder="Enter aptitud" readonly>
+        </div>
+        <div class="form-group">
+          <label for="inputProgEdit">Título</label>
+          <input type="text" class="form-control" id="inputProgEdit" placeholder="Enter progress">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#editApt').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveEditAptModal($('#inputAptEdit').val())">Guardar
+          cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------- Formulario Login-->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crear cuenta</h5>
+        <button type="button" class="close" onclick="$('#login').modal('hide');" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputUser">Usuario</label>
+          <textarea type="text" class="form-control" id="inputUser" placeholder="Enter user"></textarea>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputClave">Clave</label>
+          <textarea type="text" class="form-control" id="inputClave" placeholder="Enter clave"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="$('#login').modal('hide');">Cerrar</button>
+        <button type="button" class="btn btn-custom" onclick="saveEditAboutModal()">Crear</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    
+</body>
+  <footer class="footer section">
+    <div class="footer__container bd-grid">
+      <h1 class="footer__title">Davina Melisa Franco</h1>
+      <p class="footer-description">
+       3482571664 | davinitafranco@gmail.com
+      </p>
+
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/gmmaunas/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__link"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+
+      <p class="footer-copy">
+        Todos los derechos reservados por Davina Melisa Franco - 2022
+      </p>
+    </div>
+  </footer>
+</html>

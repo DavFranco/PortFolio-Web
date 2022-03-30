@@ -1,0 +1,250 @@
+.navbar {
+  background-color: #442D47;
+  height: 50px;
+}
+#logo-nav {
+  width: 130px;
+  height: 50px;
+  margin-left: 150px;
+}
+.btn {
+  padding: 0px 3px 3px;
+  width: 90px;
+  height: 40px;
+  margin-right: 110px;
+  color:blanchedalmond;
+  border-color:blanchedalmond;
+  
+    
+}
+nav ul li {
+  list-style: none;
+  margin-right: 60px;
+  float: left;
+}
+.nav-menu {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: italic;
+  
+}
+nav ul li::before {
+  display: block;
+  content: '';
+  width: 0%;
+  color: aliceblue;
+  background:aliceblue;
+  height: 5px;
+  top: 0%;
+  transition: width 0.2s; 
+}
+nav ul li:hover::before {
+  width: 100%; 
+}
+
+.mat-card {  
+  border-radius: 32px;
+  margin: 10px 10px; 
+  padding: 10px;
+  border-color: #CAAAC2; 
+ }
+ .mat-card#first-card {
+  padding: 0;
+ }
+ 
+#info-back-img {  
+    width: 100%;
+    height: 420px;
+    border-radius: 32px;
+
+}
+#info-img {
+  display: flex;
+  margin-left: 210px;
+}
+.profile-image {
+  width:180px;
+  height:180px;
+  border-radius: 100px;
+  padding: 0;
+  margin-top: -110px;
+  border:solid#CAAAC2; 
+  z-index: 1; 
+}
+.btn-right {
+  display: flex;
+  align-self:flex-end;
+}
+.fa-button,.fa {
+  color: #442D47;
+  display: block;
+  height: 2.4rem;
+  width: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  border-radius: 50%;
+  background: white;
+}
+.fa-button:hover,.fa:hover {
+  background: gray;
+}
+div#info-data {
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+}
+#info-data h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 38px;
+  color: #9E70A2; 
+  
+}
+#info-data span {
+  display: flex;
+  justify-content: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 18px;
+  color: #9E70A2;
+  
+}
+#info-data ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: #CAAAC2;  
+}
+.card-titles {
+  display: flex;
+  
+}
+.card-titles h2 {
+  flex: 10;
+  text-align: center;  
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 45px;
+  color: #6C4774;
+
+}
+.card-titles .btn-edit {
+  flex: 1;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  text-align: end;
+}
+ul.items-list {
+  list-style: none inside;
+}
+ul.items-list li {
+  display: flex;
+  margin: 10px 0;
+  
+}
+ul.items-list li div.data-container {
+  flex-grow: 1;
+}
+ul.items-list li div.data-container a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+ul.items-list li div.data-container a div.logo-image-container {
+  margin: 5px 0;
+}
+ul.items-list li div.data-container a div.logo-image-container img.logo-image {
+  height: 70px;
+  width: 70px;
+}
+ul.items-list li div.data-container a div.list-info {
+  margin: 0 10px;
+  font-family: Poppins;
+  font-style: normal;
+  color: #5E5C5C;
+}
+ul.items-list li div.data-container a div.list-info h3 {
+  color: black;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 36px;
+  
+}
+ul.items-list li div.data-container a div.list-info h4, ul.items-list li div.data-container a div.list-info time {
+  color: gray;
+  margin: 0 10px;
+  font-size: 14px;
+}
+ul.items-list li div.data-container a div.list-info p {
+  color: black;
+  margin: 0 10px;
+}
+/*progress {
+  margin-left: 30px;
+  margin-right: 80px;
+  height: 10px;
+  }*/
+
+
+
+ul.items-list {
+  list-style: none inside;
+
+}
+ul.items-list li {
+  padding: 15px;
+  
+}
+ul.items-list li div.aptitude-info a {
+  text-decoration: none;
+  
+}
+ul.items-list li div.aptitude-info a span {
+  color: black;
+  font-family: Poppins;
+  font-style: normal;
+  margin-left: 60px;
+}
+
+ul.items-list li div.aptitude-info a progress {
+  display: flex;
+  width: 860px;
+  
+  margin-left: 60px;
+  
+}
+
+
+.data-control{
+  display: flex;
+  
+
+}
+.mr-auto{
+  margin-right: 0!important;
+  margin-left: auto!important;
+}
+footer {
+  background-color: #442D47;
+}
+footer h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+footer p {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: aliceblue;
+  text-align: center;
+}
+.btn-custom {
+  background-color:#9E70A2;
+  width: 150px;
+}
